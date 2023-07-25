@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larry John's Portfolio</title>
+    <link rel="icon" type="image/png" href="image/LJAicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="para.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="para.js"></script>
+    <script defer src="video.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+<!-----------------header-------------->
+<header>
+    <a href="#" class="logo" onclick="reloadPage()"><img src="image/LJA.png" alt=""><span>Larry John</span></a>
+
+    <ul class="navlist">
+        <li><a href="#home" onclick="scrollToSection('HOME')">HOME</a></li>
+        <li><a href="#about" onclick="scrollToSection('ABOUT')">ABOUT</a></li>
+        <li><a href="#latest-works" onclick="scrollToSection('LATEST')">LATEST WORKS</a></li>
+        <li><a href="#service" onclick="scrollToSection('SERVICES')">SERVICES</a></li>
+        <li><a href="#contact" onclick="scrollToSection('CONTACT')">CONTACT ME</a></li>
+    </ul>
+    <div class="toggle_btn">
+        <img src="image/menu.png" alt="Sidebar Icon">
+    </div>
+      <div class="dropdown_menu"> 
+          <ul>
+              <li><a href="#home" onclick="scrollToSection('HOME')">HOME</a></li>
+              <li><a href="#about" onclick="scrollToSection('ABOUT')">ABOUT</a></li>
+              <li><a href="#latest works" onclick="scrollToSection('LATEST')">LATEST WORKS</a></li>
+              <li><a href="#service" onclick="scrollToSection('SERVICES')">SERVICES</a></li>
+              <li><a href="#contact" onclick="scrollToSection('CONTACT')">CONTACT ME</a></li>
+          </ul>
+      </div>
+</header>
+
+<!--------home Section------------->
+<section class="HOME" id="HOME">
+    <div class="Home-text">
+    <h1>Hi, I'm <span>Larry John</span></h1>
+    <h3>Freelance Designer, Developer, Video Editor</h3>
+        <p>Passionate and adaptable freelancer delivering high-quality work that exceeds expectations. Continuously learning and staying ahead of industry trends to provide cutting-edge solutions. Committed to excellence, I am a reliable asset for any project.
+        </p>
+    </div>
+    <div class="Home-imahe">
+        <img class="hugis" src="image/huggis.png" alt=""> 
+        <img class="larry" src="image/Johny.png" alt=""> 
+    </div>
+
+</section>
+
+<!--------About me Section------------->
+<section class= "ABOUT" id="ABOUT">
+    <div class="box">
+        <div class="about-text">
+        <h1>About Me</h1>
+    <h3>Freelance Designer, Developer, Video Editor</h3>
+    <p>My name is Larry John, and I am located in the Philippines.
+        <br>I am a passionate and dedicated professional. I have a strong interest in technology and its impact on society, and I am excited to explore innovative solutions and contribute to meaningful projects. I am always seeking opportunities to learn and grow, and I am enthusiastic about making a positive difference in the world through my work.
+    </div>
+        <div class="About-imahe">
+            <img class="aboutim" src="image/inst.png" alt=""> 
+        </div>
+</section>
+
+
+<!--------Portfolio me Section------------->
+
+
+<section class="LATEST" id="LATEST">
+    <div class="text-port"><h1>Latest Works</h1></div>
+
+    <div class="slider"> 
+        <div class="item">
+            <video src="videos/video3.mp4"></video>
+        </div>
+        <div class="item">
+            <video src="videos/video4.mp4"></video>
+        </div>
+        <div class="item">
+            <video src="videos/video2.mp4"></video>
+        </div>
+        <div class="item">
+            <video src="videos/video1.mp4"></video>
+        </div>
+       
+        <button id="next" class="arrow-button next">
+            <img src="image/next-but.png" alt="Next">
+        </button>
+        <button id="prev" class="arrow-button prev">
+            <img src="image/back-but.png" alt="Previous">
+        </button>
+        <div class="dots"></div>
+    </div>
+</section>
+
+
+<!--------Service me Section------------->
+<div class="double">
+<section class="SERVICES" id="SERVICES">
+    <div class="serv"><h1>Services</h1></div>
+    <div class="card-grid">
+    <div class="card1">
+        <h1>Junior Web Designer(UI/UX)</h1>
+        <div class="card-content">
+          <h3>Junior Web Designer(UI/UX)</h3>
+          <p>Are you looking for a fresh perspective and creative design solutions? As a junior web designer, I may not have professional experience, but I am highly adaptable and a fast learner. I will bring a keen eye for aesthetics and a dedication to creating visually appealing websites that align with your vision.</p>
+        </div>
+      </div>
+      
+      <div class="card2">
+        <h1>Junior Web Developer</h1>
+        <div class="card-content">
+          <h3>Junior Web Developer</h3>
+          <p>Need a junior frontend web developer to bring your website ideas to life? With a strong focus on frontend development, I combine my passion for coding with an eye for detail to create engaging and user-friendly websites. While I may be new to the field, I am eager to collaborate and contribute to the development of your web projects.</p>
+        </div>
+      </div>
+      
+      <div class="card3">
+        <h1>freelance Video Editor</h1>
+        <div class="card-content">
+          <h3>Video Editor</h3>
+          <p>Looking for a freelance video editor to enhance your visual content? With two years of experience and a diverse skill set, I offer customized video editing services tailored to your specific needs. I am proficient in various editing tools and dedicated to delivering high-quality videos that meet your expectations.</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--------Parallax effect Section------------->
+
+<section class="para">
+    <img src="Para/mountainback.png" data-speedx="0.05" data-speedy="0.02" data-speedz="0" data-rotation="0" data-distance="800" class="Parallax huge-Moun" alt="backmountain">
+    <img src="Para/backmoun2.png" data-speedx="0.02" data-speedy="0.02" data-speedz="0" data-rotation="0.02" data-distance="900" class="Parallax sec-Moun" alt="backmoun2nd">
+    <img src="Para/1st clouds.png" data-speedx="0.1" data-speedy="0.04" data-speedz="0" data-rotation="0.02" data-distance="1000" class="Parallax frs-clouds" alt="frsclouds">
+    <img src="Para/2nd mountain.png" data-speedx="0.03" data-speedy="0.01" data-speedz="0" data-rotation="0.02" data-distance="1000" class="Parallax third-Moun" alt="midmountain">
+    <img src="Para/2nd clouds.png " data-speedx="0.03" data-speedy="0.03" data-speedz="0" data-rotation="0.04" data-distance="1100" class="sec-clouds" alt="2ndclouds">
+    <div class="Parallax para-text"data-speedx="0.02" data-speedy="0.03" data-speedz="0" data-rotation="0.04"  >
+     <img src="Para/baybayin1.png" class="baybayin" alt="Tag-Baybayin">
+        <h2>Thank You!</h2>
+    </div> 
+    <img src="Para/left trees.png" data-speedx="0.009" data-speedy="0.009" data-speedz="0" data-rotation="0.04" data-distance="1100" class="Parallax left-trees" alt="LeftTrees">
+    <img src="Para/right trees.png" data-speedx="0.009" data-speedy="0.009" data-speedz="0" data-rotation="0.04" data-distance="1200" class="Parallax right-trees" alt="RightTrees">
+    <img src="Para/3rdclouds.png  " data-speedx="0.04" data-speedy="0.05" data-speedz="0" data-rotation="0.03" data-distance="1500" class="Parallax Third-clouds" alt="3rdclouds">
+    <img src="Para/front clouds.png " data-speedx="0.08" data-speedy="0.07" data-speedz="0" data-rotation="0.01" data-distance="1700" class="Parallax Front-cloud" alt="Frontclouds">
+
+
+</section>
+</div>
+<!--------Contact me Section------------->
+<section class="CONTACT" id="CONTACT"> 
+    <div class="contact-section">
+        <h2>Lets Connect!</h2>
+        <p>
+            Unlock the full potential of your project! Email me for an exclusive peek at my portfolio on Google Drive. Let's work together to bring your vision to life.
+        </p>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <ul>
+                <li>
+                    <img src="image/phone.png" alt="Phone Icon" class="icon">
+                    <span>09177505862</span>
+                </li>
+                <li>
+                    <img src="image/location.png" alt="Location Icon" class="icon">
+                    <span>Puerto Princesa, Philippines</span>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <a href="mailto:yrraljohescote@gmail.com" class="fas fa-envelope" title="Email"></a>
+            <a href="https://www.facebook.com/larryjohnandonga35/" class="fab fa-facebook-f" title="Facebook"></a>
+            <a href="https://www.instagram.com/ylarheart/" class="fab fa-instagram" title="Instagram"></a>
+            <a href="https://www.linkedin.com/in/larry-john-andonga-674080278" class="fab fa-linkedin-in" title="LinkedIn"></a>
+            <a href="#" class="fab fa-twitter" title="Twitter"></a>
+          </div>
+          
+          
+    </div>
+</section> 
+
+
+
+
+
+    
+</body>
+</html>

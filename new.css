@@ -110,7 +110,7 @@ header {
     position: relative;
     left: 60%;
     transform: translateX(-50%);
-    transition: 200ms;
+    transition: 1s;
 }
 
 .Home-imahe .larry{

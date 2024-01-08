@@ -61,7 +61,33 @@ observerService.observe(ServiceSection);
 
 ////////////**********effects************///////////////
 
-const homet = document.querySelectorAll('.eff');
+const REVSC = document.querySelectorAll('.REV');
+
+function checkCardVisibility() {
+  const threshold = 0.7; // Adjust this value as needed
+
+  REVSC.forEach(REV => {
+    const rect = REV.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Calculate the threshold offset based on the card's height
+    const thresholdOffset = rect.height * (1 - threshold);
+
+    if (rect.top < windowHeight - thresholdOffset && rect.bottom >= 0) {
+      REV.classList.add('animate-reveal');
+    } else {
+      REV.classList.remove('animate-reveal');
+    }
+  });
+}
+
+// Initial check
+checkCardVisibility();
+
+// Listen for scroll events
+window.addEventListener('scroll', checkCardVisibility);
+
+const homet = document.querySelectorAll('.homie');
 
 function checkhomeVisibility() {
   const threshold = 1; // Adjust this value as needed
@@ -84,6 +110,7 @@ checkhomeVisibility();
 
 // Listen for scroll events
 window.addEventListener('scroll', checkhomeVisibility);
+
 
 
 
